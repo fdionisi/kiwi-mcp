@@ -251,7 +251,7 @@ checksum = "5b63caa9aa9397e2d9480a9b13673856c78d8ac123288526c37d7839f2a86990"
 [[package]]
 name = "context-server"
 version = "0.8.3"
-source = "git+https://github.com/fdionisi/context-server#a7438dde8345aa181797243aaa40db8a5449536c"
+source = "git+https://github.com/fdionisi/context-server#d1ad15bc737af1d6ff6908f329272345d486ee43"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -259,6 +259,18 @@ dependencies = [
  "serde",
  "serde_json",
  "tracing",
+]
+
+[[package]]
+name = "context-server-utils"
+version = "0.1.0"
+source = "git+https://github.com/fdionisi/context-server#d1ad15bc737af1d6ff6908f329272345d486ee43"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "context-server",
+ "parking_lot",
+ "serde_json",
 ]
 
 [[package]]
@@ -861,6 +873,7 @@ dependencies = [
  "chrono",
  "clap",
  "context-server",
+ "context-server-utils",
  "futures",
  "http-client",
  "http-client-reqwest",

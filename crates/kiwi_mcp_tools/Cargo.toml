@@ -9,6 +9,5 @@ async-trait.workspace = true
 chrono.workspace = true
 context-server.workspace = true
 http-client.workspace = true
-indoc.workspace = true
 log.workspace = true
 serde_json.workspace = true
